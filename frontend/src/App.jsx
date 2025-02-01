@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { SignUp, SignIn, Dashboard, Settings, Analytics } from './pages';
 import { Toaster } from 'react-hot-toast';
 import Links from './pages/links/links';
+import ProtectRoute from './components/ProtectedRoute';
 
 function App() {
   
@@ -13,6 +14,8 @@ function App() {
       <Routes>
         <Route path='/' element={<SignIn/>}/>
         <Route path='/signup' element={<SignUp/>}/>
+        
+        <Route element={<ProtectRoute/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/settings' element={<Settings/>}/>
         <Route path='/links' element={<Links/>}/>
