@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import styles from './NewlinkModal.module.css';
+import styles from './CreateLinkModal.module.css';
 import { RxCross2 } from "react-icons/rx";
 import toast from 'react-hot-toast';
 import { createShortUrl } from '../apis';
 
-const NewlinkModal = ({ closeModal }) => {
+const CreateLinkModal = ({ closeModal }) => {
 
   const [formData, setFormData] = useState({
     originalUrl: '',
@@ -106,4 +106,4 @@ const NewlinkModal = ({ closeModal }) => {
   )
 }
 
-export default NewlinkModal
+export default CreateLinkModal;

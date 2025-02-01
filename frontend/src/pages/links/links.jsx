@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar';
-import NewlinkModal from '../../components/newlinkModal';
 import SideBar from '../../components/SideBar';
 import styles from './links.module.css';
 import toast from 'react-hot-toast';
-import { deleteUrl, getAllUrls } from '../../apis';
+import { getAllUrls } from '../../apis';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdEdit } from "react-icons/md";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import EditLinkModal from '../../components/EditLinkModal';
 import DeleteModal from '../../components/DeleteModal';
+import CreateLinkModal from '../../components/CreateLinkModal';
 
 export default function Links () {
 
@@ -39,7 +39,6 @@ export default function Links () {
       setLoading(false);
       const response = await getAllUrls();
       setData(response?.allurls);
-      toast.success(response?.message);
     } catch (error) {
       toast.error('Error in geting all urls');
     } finally {
@@ -59,7 +58,7 @@ export default function Links () {
     let hours = date.getHours();
     const minutes = date.getMinutes().toString().padStart(2, '0');
     const ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12 || 12; // Convert 0 to 12 for 12-hour format
+    hours = hours % 12 || 12; 
   
     // Construct the formatted string
     return `${month} ${day}, ${year} ${hours}:${minutes} ${ampm}`;
@@ -136,7 +135,7 @@ export default function Links () {
         </div>
         {newLinkModal && (<>
           <div className={styles.background} onClick={() => closeCreateLinkModal()}></div>
-          <NewlinkModal  closeModal={closeCreateLinkModal}/>
+          <CreateLinkModal  closeModal={closeCreateLinkModal}/>
         </>)}
         {editLinkModal && (<>
           <div className={styles.background} onClick={() => closeEditLinkModal()}></div>
