@@ -3,7 +3,6 @@ import styles from './Navbar.module.css'
 import { logo, sun_img } from '../assets';
 import { GoPlus } from "react-icons/go";
 import { IoSearchSharp } from "react-icons/io5";
-import toast from 'react-hot-toast';
 
 const Navbar = ({openModal}) => {
 
