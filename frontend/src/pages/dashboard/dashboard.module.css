@@ -97,6 +97,42 @@
   color: #3B3C51;
 }
 
-@media screen and ( max-width: 425px) {
+@media screen and (max-width : 768px){
+
+  .pageContent{
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+  .clickAnalysis{
+    flex-wrap: wrap;
+  }
+
+  .dashboard{
+    width: 100%;
+    margin: 0;
+  }
+
+  .datewise{
+    width: 100%;
+  }
+  
+  .dateHeader p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1B48DA;
+  }
+
+  .clicks{
+    font-size: 14px;
+    font-weight: 800;
+    color: #3B3C51;
+  }
+
+  .datetext{
+    font-size: 14px;
+    font-weight: 800;
+    color: #3B3C51;
+  }
+
   
 }
