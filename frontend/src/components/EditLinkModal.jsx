@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from './NewlinkModal.module.css';
+import styles from './CreatelinkModal.module.css';
 import { RxCross2 } from "react-icons/rx";
 import toast from 'react-hot-toast';
 import {  getUrl, updateShortUrl } from '../apis';
