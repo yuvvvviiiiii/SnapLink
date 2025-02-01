@@ -1,0 +1,151 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+}
+
+.content{
+  width: 100vw;
+  height: 90%;
+  display: flex;
+}
+
+.pageContent{
+  height: 100%;
+  width: 90%;
+  background-color: #FFFFFF;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 5%;
+} 
+
+.inputUpdate{
+  width: 100%;
+  height: 50px;
+}
+
+.inputContainer{
+  display: flex;
+  width: 70%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.inputTxt{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputContainer input{
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #ECECF2;
+  border-radius: 12px;
+  color: #3B3C51;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.signUpBtn{
+  width: 70%;
+  height: 40px;
+  background-color: rgba(26, 95, 255, 1);
+  border: none;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 10%;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.25);
+}
+
+.error {
+  color: #EB0D0D;
+  font-size: 12px;
+  line-height: 21px;
+  position: absolute;
+  bottom: -5px;
+  left: 30%;
+}
+
+.deleteBtn{
+  width: 35%;
+  height: 40px;
+  background-color: #EB0D0D;
+  border: none;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.25);
+  margin-left: 12.5%;
+}
+
+@media screen and ( max-width: 425px){
+  .pageContent{
+    width: 100%;
+  }
+
+  .inputContainer input{
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    background: #FFFFFF;
+    border: 1px solid #ECECF2;
+    border-radius: 12px;
+    color: #3B3C51;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .form{
+    width: 100%;
+  }
+
+  .inputContainer{
+    display: flex;
+    width: 90%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .deleteBtn{
+    width: 70%;
+    height: 40px;
+    background-color: #EB0D0D;
+    border: none;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.25);
+    margin-left: 20%;
+  }
+}

@@ -1,0 +1,102 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+}
+
+.content{
+  width: 100vw;
+  height: 90%;
+  display: flex;
+}
+
+.pageContent{
+  height: 100%;
+  width: 90%;
+  background-color: #F8F8F8;
+}
+
+.dashboard{
+  height: 100%;
+  width: 90%;
+  background-color: #FFFFFF;
+  margin-left: 50px;
+}
+
+.header{
+  height: 90px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header p{
+  font-size: 20px;
+  color: #181820;
+  font-weight: 800;
+}
+
+.header span{
+  font-size: 20px;
+  color: #1B48DA;
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+.clickAnalysis{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 470px;
+  padding: 15px;
+}
+
+.datewise{
+  width: 49%;
+  height: 100%;
+  border: 1px solid #ECECF2;
+  border-radius: 6px;
+}
+
+.date{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  width: 80%;
+}
+
+.bargraph{
+  width: 70%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.dateHeader{
+  height: 60px;
+  padding: 15px;
+}
+
+.dateHeader p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #1B48DA;
+}
+
+.datetext{
+  font-size: 18px;
+  font-weight: 800;
+  color: #3B3C51;
+}
+
+.clicks{
+  font-size: 18px;
+  font-weight: 800;
+  color: #3B3C51;
+}
+
+@media screen and ( max-width: 425px) {
+  
+}
